@@ -1,0 +1,98 @@
+/* Overlay styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* High z-index to ensure it appears on top */
+}
+
+/* Modal content box styling */
+.modal-content {
+    background: #fff; /* White background for content */
+    padding: 30px; /* More padding for comfortable spacing */
+    border-radius: 12px; /* Slightly larger rounded corners */
+    width: 450px; /* Wider width for more space */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+    font-family: 'Arial', sans-serif; /* Clean font for readability */
+}
+
+/* Form element styling */
+.modal-content form div {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+/* Label styling */
+.modal-content label {
+    font-size: 14px; /* Smaller font size for labels */
+    font-weight: bold; /* Bold labels for clarity */
+    color: #333; /* Dark gray color for labels */
+    display: block; /* Each label on a separate line */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Input and textarea styling */
+.modal-content input[type="text"],
+.modal-content input[type="url"],
+.modal-content input[type="password"],
+.modal-content textarea {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Comfortable padding */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 14px; /* Standard input font size */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+/* Input focus styling */
+.modal-content input[type="text"]:focus,
+.modal-content input[type="url"]:focus,
+.modal-content input[type="password"]:focus,
+.modal-content textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Checkbox styling */
+.modal-content input[type="checkbox"] {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+/* Button styling */
+.modal-content button[type="submit"],
+.modal-content button[type="button"] {
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for button */
+    font-size: 14px; /* Button font size */
+    margin-right: 10px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Submit button styling */
+.modal-content button[type="submit"] {
+    background-color: #007bff; /* Blue background for submit */
+    color: #fff; /* White text */
+}
+
+/* Submit button hover styling */
+.modal-content button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Cancel button styling */
+.modal-content button[type="button"] {
+    background-color: #f8f9fa; /* Light gray background for cancel */
+    color: #333; /* Dark text */
+}
+
+/* Cancel button hover styling */
+.modal-content button[type="button"]:hover {
+    background-color: #e2e6ea; /* Darker gray on hover */
+}

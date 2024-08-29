@@ -1,0 +1,12 @@
+/user/register
+    //when e-mail is not verified, should throw not verified
+
+/user/verifyOTP
+    //when the OTP is incorrect should throw error message with 400
+
+/user/signin
+    //when the password is incorrect should throw message
+    //invalid email format message 
+    //email not registered message
+    //when successful, show give the message the sigin in successful and then give the sigin code
+    //user already signed in message

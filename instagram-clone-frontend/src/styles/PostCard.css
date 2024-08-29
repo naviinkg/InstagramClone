@@ -1,0 +1,148 @@
+.post-card {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 600px;
+    /* Center the card horizontally */
+    margin: 0 auto;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+}
+
+.post-image2 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 14px 16px;
+}
+
+.post-image2 img {
+    max-width: 100%; /* Ensure image scales within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: 600;
+    color: #262626;
+}
+
+.post-actions {
+    padding: 8px 16px;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    color: #262626;
+    font-size: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.post-likes,
+.post-caption,
+.post-comments,
+.add-comment {
+    padding: 0 16px;
+    margin-bottom: 8px;
+}
+
+.post-likes {
+    font-weight: 600;
+}
+
+.post-caption .username {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.post-comments a {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+.add-comment input {
+    width: 100%;
+    border: none;
+    padding: 16px 0;
+    font-size: 14px;
+}
+
+.add-comment input::placeholder {
+    color: #8e8e8e;
+}
+
+.comment-list {
+    padding: 10px 16px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #dbdbdb;
+}
+
+.comment {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.comment .username {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+
+.add-comment {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    margin-bottom: 8px;
+}
+
+.add-comment input {
+    width: 85%; /* Adjust width to fit with button */
+    border: none;
+    padding: 16px 0;
+    font-size: 14px;
+}
+
+.add-comment input::placeholder {
+    color: #8e8e8e;
+}
+
+.submit-comment-btn {
+    background: none;
+    border: none;
+    color: #262626;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between input and button */
+}
+
+
+.comment {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and icon */
+}
+
+.delete-comment-btn {
+    background: none;
+    border: none;
+    color: #ff0000; /* Use a color that makes it look like a delete button */
+    cursor: pointer;
+    margin-left: 10px; /* Spacing from comment text */
+    font-size: 16px; /* Size of the trash icon */
+}

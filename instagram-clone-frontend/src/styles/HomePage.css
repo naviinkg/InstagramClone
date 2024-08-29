@@ -1,0 +1,80 @@
+/* HomePage.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light background color for the whole page */
+  color: #333; /* Dark text color for contrast */
+}
+
+.home-page {
+  display: flex;
+  height: calc(100vh - 60px); /* Adjust height to account for navbar */
+  margin-top: 60px; /* Offset the height of the navbar */
+}
+
+.sidebar {
+  width: 220px;
+  padding: 20px;
+  border-right: 1px solid #ddd; /* Light border color */
+  background-color: #ffffff; /* Light background color for sidebar */
+}
+
+.logo {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333; /* Dark text color */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: #333; /* Dark text color */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align content to the top */
+}
+
+.sign-in-popup {
+  background-color: #ffffff; /* Light background for popup */
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 400px; /* Set a maximum width for the popup */
+  margin: auto;
+}
+
+.sign-in-popup button {
+  background-color: #0095f6; /* Blue button color */
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center posts horizontally */
+  width: 100%; /* Full width to utilize available space */
+  margin-top: 60px; /* Offset the height of the navbar */
+}
