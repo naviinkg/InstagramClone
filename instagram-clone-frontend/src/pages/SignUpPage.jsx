@@ -36,13 +36,18 @@ const SignUpPage = () => {
       if (response.status === 201) {
         alert('Sign Up is successful');
         window.location.href = '/signin'; // Redirect to sign-in page
+        
+        setIsModalOpen(false);
       } else {
+        console.log("response from verifyOTP = ", response);
         alert('OTP verification failed: ' + response.data.message);
+        
       }
     } catch (error) {
+      console.log(error);
       alert('An error occurred during OTP verification');
+      
     } finally {
-      setIsModalOpen(false);
     }
   };
 
