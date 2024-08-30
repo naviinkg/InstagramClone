@@ -141,7 +141,7 @@ GET /post/{post_id}/unlike/{user_id}: Unlike a post.
 
 ## Screenshots
 
-[Watch the demo video](screenshots/InstaClone%20Recording.mp4)
+[Watch the demo video](https://drive.google.com/file/d/1XIhdndUJcRZr-KVGoMe-kkoVvOpN7znH/view?usp=sharing)
 
 ![SignInPage](screenshots/SignInPage.png)
 
