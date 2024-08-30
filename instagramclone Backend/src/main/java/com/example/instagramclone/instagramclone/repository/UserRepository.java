@@ -66,12 +66,14 @@ public class UserRepository {
                 return "You are already following " + follower.getFullName();
             followingList.add(followerId);
 
+            user.setFollowingCount(followingList.size());
             user.setFollowing(followingList);
             updateUserById(userId, user);
 
             List<String> followers = follower.getFollowers();
             followers.add(user.getId());
             follower.setFollowers(followers);
+            follower.setFollowersCount(followers.size());
 
             updateUserById(followerId, follower);
 
@@ -92,12 +94,15 @@ public class UserRepository {
                 return "No such following user found";
 
             user.setFollowing(followingList);
+            user.setFollowingCount(followingList.size());
+
             updateUserById(userId, user);
 
             List<String> followers = follower.getFollowers();
             if (followers.contains(userId))
                 followers.remove(userId);
 
+            follower.setFollowersCount(followers.size());
             follower.setFollowers(followers);
             updateUserById(followingId, follower);
 
